@@ -22,10 +22,10 @@ const startServer = async () => {
   try {
     await connectMongo();
     app.listen(port, () => {
-      console.log(`🚀 Server running on port: ${port}`);
+      console.log(`\n🚀 Server running on port: ${port}`);
     });
   } catch (error) {
-    console.error(`❌ Server failed to start: ${(error as Error).message}`);
+    console.error(`\n❌ Server failed to start: ${(error as Error).message}`);
     process.exit(1);
   }
 };
